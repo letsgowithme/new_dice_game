@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+*,
+body {
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 20%;
+}
+
+.frame {
+    border: 20px solid rgb(165, 103, 28);
+    /* width: 1000px; */
+    width: 100%;
+    min-width: 650px;
+}
+
+.gameZone {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2,
+h1,
+#buttonNewGame,
+#buttonRollDice,
+#buttonHold {
+    color: rgb(98, 98, 106);
+}
+
+h1 {
+    font-size: 1.2em;
+    margin-top: 2%;
+}
+
+#titlePlayer1,
+#titlePlayer2 {
+    font-size: 2em;
+}
+
+#headerZone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#message {
+    font-size: 1.2em;
+    padding-top: 45px;
+    color: green;
+    height: 40px;
+}
+
+#buttonNewGame {
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10%;
+}
+
+
+.h5 {
+    color: rgb(42, 42, 45);
+    font-size: 20px;
+}
+
+.playerZone,
+.zone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 290px; */
+    margin-bottom: 8%;
+}
+
+#dice {
+    position: absolute;
+    left: 48%;
+    top: 40%;
+}
+
+.btns {
+    margin-top: 42%;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#bgZone1,
+#bgZone2 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(221, 221, 224, 0.525);
+    display: none;
+}
+
+#bgZone1 {
+
+    left: 21%;
+    width: 29%;
+    height: 72%;
+}
+
+#bgZone2 {
+    right: 20%;
+    width: 30%;
+    height: 72%;
+}
+
+#statementPlayer1,
+#statementPlayer2 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+    margin-left: 10px;
+    margin-top: -10px;
+    opacity: 0;
+}
+
+.score {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 3.9em;
+}
+
+.current {
+    display: flex;
+    flex-direction: column;
+    background: red;
+    font-size: 1em;
+    width: 160px;
+    height: 88px;
+    align-items: center;
+    padding: 10px;
+    margin-top: 130px;
+    border-radius: 5px;
+}
+
+.current_text {
+    color: rgb(248, 240, 240);
+    font-size: 1em;
+    margin-top: -50px;
+}
+
+
+#dice {
+    position: absolute;
+    /* top: 370px; */
+
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-bottom: 25%;
+}
+
+
+#buttonRollDice,
+#buttonHold {
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    background-color: transparent;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    font-weight: 700;
+}
+
+#buttonRollDice {
+    margin-top: 100%;
+}
+
+#buttonHold {
+    margin-top: 40px;
+}
+
+#rollDiceImg,
+#holdImg {
+    padding: 10px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+}
+
+#roundPlayer1,
+#roundPlayer2 {
+    margin: 20px;
+}

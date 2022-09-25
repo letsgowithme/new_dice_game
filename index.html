@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container frame">
+    <div id="bgZone1"></div>
+    <div id="bgZone2"></div>
+    <div class="row">
+        <section id="headerZone">
+            <button type="button" id="buttonNewGame"><img src="images/cross.svg" alt="cross">NEW GAME</button>
+            <div id="message"></div>
+        </section>
+    </div>
+
+    <div class="row">
+        <div class="gameZone">
+           
+                <!-- Player 1 -->
+                <section class="playerZone zone" id="playerZone1">
+                    <div class="player">
+                        <h2 id="titlePlayer1">PLAYER 1</h2>
+                        <div id="statementPlayer1"></div>
+                    </div>
+
+                    <div class="score" id="globalPlayer1" value="">0</div>
+                    <div class="current">
+                        <h5 class="h5">CURRENT</h5>
+                        <div class="current_text" id="roundPlayer1" value="">0</div>
+                    </div>
+                </section>
+
+
+          
+                <!-- DICE ZONE -->
+                <section id="diceZone" class="zone">
+                    
+                    <div>
+                        <img src="images/Dice1.png" id="dice" alt="dice" class="img">
+                    </div>
+                    <div class="btns">
+                    <button type="button" id="buttonRollDice"><img src="images/roundabout.png" width="50" height="50" alt="roll-dice" id="rollDiceImg"/>ROLL
+                        DICE
+                    </button>
+                </div>
+                <div>
+                    <button type="button" id="buttonHold"><img src="images/download.png" width="40" height="40" alt="hold" id="holdImg"/>HOLD
+                    </button>
+                </div>
+                    
+                </section>
+            
+
+            
+                <!-- Player 2 -->
+                <section class="playerZone zone" id="playerZone2">
+                    
+                    <div class="player">
+                        <h2 id="titlePlayer2">PLAYER 2</h2>
+                        <div id="statementPlayer2"></div>
+                    </div>
+                    <div class="score" id="globalPlayer2" value="">0</div>
+                    <div class="current">
+                        <h5 class="h5">CURRENT</h5>
+                        <div class="current_text" id="roundPlayer2" value="">0</div>
+                    </div>
+                </section>
+            
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
